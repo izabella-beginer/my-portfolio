@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded"), function () {
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -11,4 +12,12 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
-}
+} }
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
