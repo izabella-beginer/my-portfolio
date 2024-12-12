@@ -34,7 +34,6 @@
         </p>
     </section>
 
-
     <!--project section-->
 <section id="Projects">
     <h2>My Project <Section></Section></h2>
@@ -63,33 +62,38 @@
     </section>
 
     <!-- Contact Section -->
-    <form action="a"method="post"> 
-        <label for="name">Full Name:</label>
-        <input type=""text"id="name"="name"required> 
-        <br>
-        <br>
-    
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <br>
-    
-        <p>
-          <label for="msg">Message:</label>
-          <textarea id="msg" name="user_message"></textarea>
-
-          <p class="button">
-            <button type="submit">Send your message</button>
-          </p>
-          <button type="submit">Register</button>
-
-        </p>
-      </form>
+<section id ="Contact Me >"
+    <div class="container">
+        <form action="action_page.php">
       
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Izabella Balogh</p>
+        <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo"></p>
     </footer>
 </body>
 </html>
