@@ -11,15 +11,30 @@
     <!-- Header Section -->
     <header>
         <h1>Izabella Balogh</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me !</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+            <button class="btn" onclick="filterSelection('cars')"> About Me</button>
+            <button class="btn" onclick="filterSelection('people')"> my work</button>
+          </div>
     </header>
-    
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column nature">
+          <div class="content">
+            <img src="Bluffer'spark.jpg" alt="Mountains" style="width:50%">
+            <h4>Mountains</h4>
+            <p>This is the famous Bluffer's park</p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+            <img src="park.jpg" alt="park" style="width:50%">
+            <h4>park</h4>
+            <p>this is located in Scarborough Ontario..</p>
+          </div>
+        </div>
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
@@ -31,6 +46,8 @@
             started computer programming and analysis in september 2024 at Humber College. 
         </p>
     </section>
+
+
     
     <!-- Projects Section -->
     <section id="projects">
@@ -58,7 +75,6 @@
             <button type="submit">Send your message</button>
           </p>
           <button type="submit">Register</button>
-
 
         </p>
       </form>
