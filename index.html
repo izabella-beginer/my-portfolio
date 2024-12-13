@@ -12,15 +12,15 @@
     <header>
         <div class="image1-text">
             <div class="image1-text">
-              <h1 style="font-size:50px">Izabella Balogh</h1>
+              <h1 style="font-size:30px">Izabella Balogh</h1>
               
             </div>
           </div>
     </header>
     <div class="topnav">
-        <a class="active" href="About me">Aboutme</a>
-        <a href="#news">My Projects</a>
-        <a href="#contact">Contact</a>
+        <a class="active" href="About">About me</a>
+        <a href="#Projects">My Projects</a>
+        <a href="#Contact">Contact</a>
         <a href="#about" class="split">date</a>
       </div>
     
@@ -34,20 +34,20 @@
             I decided that I would continue my studies in computer programming field 
             started computer programming and analysis in september 2024 at Humber College. 
         </p>
-        
+
     </section>
 
     <!--project section-->
 <section id="Projects">
     <h2>My Project <Section></Section></h2>
-</section>
-
     <!-- Projects Section 1-->
+<section id="Section1">
 <button class="accordion">Section 1</button>
 <div class="panel">
   <p>This is a group project that i recently worked on.</p>
-<a href="https://github.com/IuliiaBazhutina/Group-project-Christmas-website" title="Go to Group-project-Christmas-website">Visit me ! </a>
+<a href="https://github.com/IuliiaBazhutina/Group-project-Christmas-website">Visit me !</a>
 </div>
+</section>
 
 <!-- section2-->
 <button class="accordion">Section 2</button>
@@ -59,38 +59,58 @@
 <button class="accordion">Section 3</button>
 <div class="panel">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<a href="https://github.com/IuliiaBazhutina/Group-project-Christmas-website" title="Go to Group-project-Christmas-website">Visit me ! </a>
+<a href="https://github.com/IuliiaBazhutina/Group-project-Christmas-website" target="Go to Group-project-Christmas-website">Visit me ! </a>
      </div>         
             
     </section>
 
     <!-- Contact Section -->
-<section id ="Contact Me >"
-    <div class="container">
-        <form action="action_page.php">
+    <h2>Contact Form</h2>
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
       
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
 
-
-    <!-- Footer Section -->
+ <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Izabella Balogh</p>
         <button type="button"
