@@ -1,26 +1,22 @@
-var coll = document.getElementsByClassName("collapsible");
+const accordions= document.querySelector(".accordion");
 var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+accordions.forEach(button =>)
+  button.addEventListener("click", function() {
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    const panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
     } else {
-      content.style.display = "block";
+      panel.style.display = "block";
     }
   });
-}
 
-const form = document.getElementById('registerForm');
-
-Form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form from submitting for now
-    console.log('Form submitted!'); // Check if form submission is working
-});
-
-const Form = document.getElementById('contactForm');
+  document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+     document.body.classList.toggle('dark-mode');
+     });
+  
+const form = document.getElementById('contactForm');
 
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
@@ -40,3 +36,8 @@ form.addEventListener('submit', function(event) {
       event.preventDefault(); // Prevent form submission
   }
 });
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
