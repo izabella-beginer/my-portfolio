@@ -22,68 +22,67 @@
         <a href="#Projects">My Projects</a>
         <a href="#Contact">Contact</a>
         <a href="#about" class="split">date</a>
-      </div>
-    
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </div>
+
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>Hello, My name is Izabella
             Hello, my name is Izabella. I'm 24 years old and I graduated from Loretto College High School in 2018. In 2022, I pursued Pre-Health studies at Durham College. I decided to continue my studies in the field of computer programming, and I began my Computer Programming and Analysis program in September 2024 at Humber College.
         </p>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+         Hi Click me! to display Date and Time.</button>
+        <p id="demo"></p>
 
     </section>
-
     <!--project section-->
-<section id="Projects">
-    <h2>My Project <Section></Section></h2>
-    <!-- Projects Section 1-->
-<section id="Section1">
-<button class="accordion">Section 1</button>
-<div class="panel">
-  <p>This is a group project that i recently worked on.</p>
-<a href="https://github.com/IuliiaBazhutina/Group-project-Christmas-website">Visit me !</a>
-</div>
-</section>
 
-<!-- section2-->
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<!--section3-->
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<a href="https://github.com/IuliiaBazhutina/Group-project-Christmas-website" target="Go to Group-project-Christmas-website">Visit me ! </a>
-     </div>         
-            
-    </section>
+    <section>
+      <h2>Grid Layout Example</h2>
+      <div class="grid-container">
+          <div class="grid-item">Grid 1</div>
+          <div class="grid-item">Grid 2</div>
+          <div class="grid-item">Grid 3</div>
+          <div class="grid-item">Grid 4</div>
+          <div class="grid-item">Grid 5</div>
+          <div class="grid-item">Grid 6</div>
+      </div>
+  </section>
+  
+   
 
     <!-- Contact Section -->
     <h2>Contact Form</h2>
     <form action="/my-handling-form-page" method="post">
-        <p>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name" />
-        </p>
-        <p>
-          <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email" />
-        </p>
-        <p>
-          <label for="msg">Message:</label>
-          <textarea id="msg" name="user_message"></textarea>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+      </div>
+    
+      <div>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email" />
+      </div>
+    
+      <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </div>
+    
+      <div class="button">
+        <button type="submit">Send your message</button>
+      </div>
+    </form>
         </p>
       </form>
       
+
  <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Izabella Balogh</p>
-        <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-<p id="demo"></p>
     </footer>
+
 </body>
 </html>
