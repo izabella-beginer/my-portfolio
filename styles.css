@@ -5,7 +5,9 @@ html {
 #section1 {
   height: 100px;
   background-color:transparent;
-  text-align: justify;
+  text-align:justify;
+  
+
 }
 
 #section2 {
@@ -50,8 +52,9 @@ section {
 }
 
 section h1{
-    text-shadow: 0 0 3px #785f71, 0 0 5px #664959;
-    
+  text-shadow: 0 0 3px #785f71, 0 0 5px #664959;
+  
+
 }
 
 section h2{
@@ -69,7 +72,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 0 10px;
+  margin: 10px;
   
 }
 
@@ -115,13 +118,13 @@ body {
   }
   
   .topnav a.active{
-background-color: #7d3752;
+background-color:  #87586c;
 
   }
 
   .topnav a, .topnav button {
     float: left;
-    color:#ab6e85;
+    color: #87586c;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -130,7 +133,7 @@ background-color: #7d3752;
   
   .topnav a:hover {
     background-color: #ddd;
-    color: rgb(140, 63, 115);
+    color:#87586c;
   }
 
   
@@ -229,3 +232,15 @@ footer {
   width: 100%;
   
 }
+ol {
+  background:#b17786;
+  padding: 20px;
+}
+
+ol li {
+  background:#f0eced;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+} 
+
