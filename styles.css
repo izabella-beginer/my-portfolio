@@ -1,28 +1,52 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color:hsl(344, 28%, 62%);
-    line-height: 1.6;
-    margin: 0;
-    text-align: center;
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 100px;
+  background-color:transparent;
+  text-align: justify;
+}
+
+#section2 {
+  height: 100px;
+  background-color:transparent ;
+  text-align:justify ;
+  
 }
 
 header{
-    background-image:url("image.jpg");
-    color: white;
+  background-image:url("image.jpg");
+  color: white;
+  text-align: center;
+  padding: 2px;  
+  height: 100%;
+background-position: center;
+position: relative;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:whitesmoke;
+    line-height: 1.6;
+    margin: 0;
     text-align: center;
-    padding: 2px;  
-    height: 100%;
-  background-position: center;
-  position: relative;
+    
+  
+}
+dark-mode {
+   background-color: black; 
+   color: whitesmoke;
+
 }
 
 section {
     padding: 15px;
-    margin: 10px;
+    margin: 15px;
     background-color: rgb(200, 177, 184);
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-height:100px ;
+  
 }
 
 section h1{
@@ -67,15 +91,7 @@ nav ul li a:hover {
     padding: 15px;
     width: 70px;
     height: 50px;
-  }
-  footer {
-    background-image: url("image.jpg");
-    color: white;
-    text-align: left;
-    padding: 7px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+ 
 }
 body {
     /* Center the form on the page */
@@ -95,12 +111,17 @@ body {
     overflow: hidden;
     background-color: #c08998;
     text-align: center;
+    justify-content: space-around;
   }
   
+  .topnav a.active{
+background-color: #7d3752;
 
-  .topnav a {
+  }
+
+  .topnav a, .topnav button {
     float: left;
-    color: #f2f2f2;
+    color:#ab6e85;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -109,8 +130,9 @@ body {
   
   .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: rgb(140, 63, 115);
   }
+
   
   /* Create a right-aligned (split) link inside the navigation bar */
   .topnav a.split {
@@ -188,15 +210,22 @@ body {
   }
   
 
-
-
-
-
-
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
+}
+
+
+footer {
+  background-image: url("image.jpg");
+  color: white;
+  text-align: left;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
 }
