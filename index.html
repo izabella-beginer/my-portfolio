@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body> 
+
+  
      <!-- Header Section -->
      <header>
         <div class="image1-text">
             <div class="image1-text">
               <h1 style="font-size:30px">Izabella Balogh</h1>
-              
-            </div>
           </div>
     </header>
+
+    <!--Navigation -->
     <div class="topnav">
         <a class="active" href="About">About me</a>
         <a href="#Projects">My Projects</a>
         <a href="#Contact">Contact</a>
         <a href="#about" class="split">date</a>
-        
-        </div>
-
+        <button id="darkMode()">Darkmode</button>
+</div>
+<div class="main" id="section1">
+  <a href="#section2">down</a>
     <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
+        <h1>About Me</h1>
         <p>Hello
             My name is Izabella. I'm 24 years old and I graduated from Loretto College High School in 2018. In 2022, I pursued Pre-Health studies at Durham College. I decided to continue my studies in the field of computer programming, and I began my Computer Programming and Analysis program in September 2024 at Humber College.
         </p>
@@ -35,47 +37,59 @@
         onclick="document.getElementById('demo').innerHTML = Date()">
          Hi Click me! to display Date and Time.</button>
         <p id="demo"></p>
-
     </section>
-    <!--project section-->
+
+    
+    <!--projet-->
  <section id="projects"> 
-<h2>My Projects</h2> <ul>
-<li><a href="https://izabella-beginer.github.io/Lab-7-/" target="Click me">Project 1: Event Handling with Javascript </a></li>
- <li><a href="https://iuliiabazhutina.github.io/Group-project-Christmas-website/" target="Click me">Project 2: Group Christmas Website </a></li>
- <li><a href="https://izabella-beginer.github.io/Fundamentals---Styling-and-Layout/" target="Click me">Project 3 :Fundamentals---Styling-and-Layout </a></li>
-<li><a href="https://github.com/izabella-beginer" target="Click me">Follow ME For More !My Git Page</a></li>
-     </ul>
+<h2>My Projects</h2>
+
+     <button class="filter-btn" data-category="javascript">JavaScript</button>
+<button class="filter-btn" data-category="html-css">HTML/CSS</button>
+
+<div class="project" data-category="javascript">Project 1</div>
+<a href="https://izabella-beginer.github.io/Lab-7-/" target="Click me"> Event Handling with Javascript </a></li>
+
+<div class="project" data-category="html-css">Project 2</div>
+<a href="https://iuliiabazhutina.github.io/Group-project-Christmas-website/" target="Click me"> Group Christmas Website </a>
+
+
+<div class="project" data-category="Html/css">Project 3</div>
+ <li><a href="https://izabella-beginer.github.io/Assignment-2-Build-a-Web-Page-Using-the-HTML5-Web-Storage-API/" target="Click me">HTML5-Web-Storage-API</a>
+     
+  <div class="project" data-category="Html/css">Git Page</div>
+  <a href="https://github.com/izabella-beginer" target="Click me">Follow ME For More !My Git Page</a>
+</section>
 
     <!-- Contact Section -->
+     <section id="Contact">
     <h2>Contact Form</h2>
     <form action="/my-handling-form-page" method="post">
       <div>
         <label for="name">Name:</label>
         <input type="text" id="name" name="user_name" />
       </div>
-    
       <div>
         <label for="mail">Email:</label>
         <input type="email" id="mail" name="user_email" />
       </div>
-    
       <div>
         <label for="msg">Message:</label>
         <textarea id="msg" name="user_message"></textarea>
       </div>
-    
+    <div>
       <div class="button">
         <button type="submit">Send your message</button>
       </div>
     </form>
-        </p>
-      </form>
-      
-
+    </section>
+    
+    <div class="main" id="section2">
+      <a href="#section1">up</a>
+  
  <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Izabella Balogh</p>
-    </footer>
-
+        
 </body>
 </html>
