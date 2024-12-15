@@ -1,7 +1,13 @@
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+
 const accordions= document.querySelector(".accordion");
 var i;
 
-accordions.forEach(button =>)
+accordions.forEach(button => )
   button.addEventListener("click", function() {
     this.classList.toggle("active");
     const panel = this.nextElementSibling;
@@ -12,9 +18,7 @@ accordions.forEach(button =>)
     }
   });
 
-  document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-     document.body.classList.toggle('dark-mode');
-     });
+  
   
 const form = document.getElementById('contactForm');
 
@@ -25,7 +29,8 @@ const nameError = document.getElementById('nameError');
 const emailError = document.getElementById('emailError');
 
 form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form from submitting
+    let isValid=true;
+   
 });
 form.addEventListener('submit', function(event) {
   // Clear any previous error messages
@@ -33,11 +38,28 @@ form.addEventListener('submit', function(event) {
 
   if (nameInput.value.trim() === '') {
       nameError.textContent = 'Please enter your name';
+      isValid=false;
+  }
+      if (!isValid){
       event.preventDefault(); // Prevent form submission
   }
 });
 
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
+
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.project');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const category = this.getAttribute('data-category');
+        projects.forEach(project => {
+            if (project.getAttribute('data-category') === category || category === 'all') {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    });
+});
+
